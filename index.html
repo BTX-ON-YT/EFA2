@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/styles.css">
+</head>
+<body>
+    <form class="box">
+        <div class="field">
+          <label class="label">Volume</label>
+          <div class="control">
+            <input class="input" type="number" placeholder="" id="volume">
+          </div>
+        </div>
+      
+        <div class="field">
+          <label class="label">Weight</label>
+          <div class="control">
+            <input class="input" type="number" placeholder="" id="weight">
+          </div>
+        </div>
+      
+        <button class="button is-primary" type='button' onclick="main()">Find</button>
+      </form>
+      <div class="box">
+        <p>
+          <strong>Element:</strong>
+          <span id="element"></span>
+        </p>
+        <p>
+          <strong>Atomic Weight:</strong>
+          <span id="atwe"></span>
+        </p>
+        <p>
+            <strong>Atomic Number:</strong>
+            <span id="atnum"></span>
+        </p>
+      </div>
+
+      <script src="./js/index.js"></script>
+</body>
+</html>
